@@ -1,0 +1,13 @@
+INPUT PART
+- Input a file with the lyrics, line by line
+- Fill class Text with Line[]
+
+DICT LOADER PART
+- fill dictionnaries class with all his sub-classes
+
+TRADUCTION PART
+- traduct the whole text and store it into another Text object
+
+COLOR PART
+- print the good color depanding of the symbols (and his frequency?)
+
