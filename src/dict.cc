@@ -1,4 +1,4 @@
-#include "dict_loader.hh"
+#include "dict.hh"
 
 #include <sstream>
 #include <string>

@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
         exit(0);
     }
 
-    //Dict dict = Dict("data/cmudict");
+    Dict dict = Dict("data/cmudict");
     Text lyrics = Text(argv[0]);
-    //lyrics.load_phoenetics(dict);
+    lyrics.load_phoenetics(dict);
     lyrics.dump();
 
     std::cout << "Ok nice\n";

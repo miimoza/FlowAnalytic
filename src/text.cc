@@ -4,7 +4,7 @@
 
 Text::Text(std::string path)
 {
-    
+
     std::cout << "loading text\n";
 }
 
