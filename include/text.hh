@@ -1,6 +1,6 @@
-#include "dict.hh"
-
 #include <vector>
+
+#include "dict.hh"
 
 using word = std::string;
 using line = std::vector<word>;

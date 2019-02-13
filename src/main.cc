@@ -11,8 +11,8 @@ int main(int argc, char *argv[])
         exit(0);
     }
 
-    Dict dict = Dict("data/cmudict");
-    Text lyrics = Text(argv[0]);
+    Dict dict("data/cmudict");
+    Text lyrics(argv[0]);
     lyrics.load_phoenetics(dict);
     lyrics.dump();
 
