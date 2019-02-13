@@ -1,9 +1,21 @@
 #include <iostream>
+#include <stdexcept>
+
+#include "text.hh"
 
 int main(int argc, char *argv[])
 {
     if (argc < 2)
-        std::cout << "usage: ./flow-analytic my_lyrics_file\n";
+    {
+        std::cerr << "usage: ./flow-analytic my_lyrics_file\n";
+        exit(0);
+    }
 
+    //Dict dict = Dict("data/cmudict");
+    Text lyrics = Text(argv[0]);
+    //lyrics.load_phoenetics(dict);
+    lyrics.dump();
+
+    std::cout << "Ok nice\n";
     return 1;
 }
