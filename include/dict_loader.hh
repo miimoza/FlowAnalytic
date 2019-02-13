@@ -1,3 +1,4 @@
+#include <fstream>
 #include <map>
 #include <vector>
 
@@ -6,7 +7,8 @@ using words_map = std::map<std::string, phonetic>;
 
 class Dict {
 public:
-    Dict (std::string path);
+    Dict(std::ifstream is);
+    Dict(std::string path);
     phonetic get_phonetic(std::string word);
 private:
     words_map wm;
