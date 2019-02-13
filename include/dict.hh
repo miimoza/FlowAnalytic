@@ -12,4 +12,5 @@ public:
     phonetic get_phonetic(std::string word);
 private:
     words_map wm;
+    void load(std::ifstream is);
 };
